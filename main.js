@@ -15,8 +15,6 @@ function calculateMoney(tickets){
     }
 }
 
-const totalProfit = calculateMoney('7')
-// console.log(totalProfit)
 
 // Problem 1 solved
 
@@ -28,16 +26,32 @@ function checkName(name){
         return 'Invalid'
     }
     else{
-        if(name.includes('a','y','i','e','o', 'u','w')){
-            return 'Bad Name'
+        if(name.toLowerCase().endsWith('a')){
+            return 'Good Name'
+        }
+        else if(name.toLowerCase().endsWith('y')){
+            return 'Good Name'
+        }
+        else if(name.toLowerCase().endsWith('i')){
+            return 'Good Name'
+        }
+        else if(name.toLowerCase().endsWith('e')){
+            return 'Good Name'
+        }
+        else if(name.toLowerCase().endsWith('o')){
+            return 'Good Name'
+        }
+        else if(name.toLowerCase().endsWith('u')){
+            return 'Good Name'
+        }
+        else if(name.toLowerCase().endsWith('w')){
+            return 'Good Name'
         }
         else{
-            return 'Good Name'
+            return 'Bad Name'
         }
     }
 }
-
-const nameCheck = checkName();
 
 // problem 2 solved
 
@@ -62,8 +76,6 @@ function deleteInvalids(array){
     }
 }
 
-
-const deleteInvalidArray = deleteInvalids([NaN, 32]);
 
 // Problem 3 solved
 
@@ -94,8 +106,6 @@ function password(details){
 
 }
 
-const details = {name: 'rahat', birthYear: 2002, siteName: 'facebook'}
-const generatedPassword = password(details)
 
 // Problem 4 solved
 
@@ -119,14 +129,11 @@ function monthlySavings(allPayments, livingCost){
         }
         else{
             return 'Total Savings: ' + (paymentSum - livingCost)
-        }
-        console.log(paymentSum)
+        } 
     }
     else{
-        console.log('Invalid')
+        return 'Invalid'
     }
 }
 
-const totalEarnings = [1000, 2000, 2500]
-const totalSavings = monthlySavings(totalEarnings, 5400);
 // problem 5 solved
